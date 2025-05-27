@@ -1,0 +1,51 @@
+object frmGeselecteerdeMoment: TfrmGeselecteerdeMoment
+  Left = 2772
+  Height = 225
+  Top = 435
+  Width = 288
+  Caption = 'Aangewezen moment'
+  ClientHeight = 225
+  ClientWidth = 288
+  LCLVersion = '3.0.0.1'
+  object eMoment: TLabeledEdit
+    Left = 14
+    Height = 23
+    Top = 19
+    Width = 138
+    EditLabel.Height = 15
+    EditLabel.Width = 138
+    EditLabel.Caption = 'Geselecteerde moment'
+    TabOrder = 0
+    Text = 'eMoment'
+  end
+  object eNaarMoment: TLabeledEdit
+    Left = 16
+    Height = 23
+    Top = 64
+    Width = 136
+    EditLabel.Height = 15
+    EditLabel.Width = 136
+    EditLabel.Caption = 'Verplaatsen naar moment'
+    TabOrder = 1
+    Text = 'eNaarMoment'
+  end
+  object bOk: TButton
+    Left = 104
+    Height = 25
+    Top = 184
+    Width = 75
+    Caption = 'Ok'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object bCancel: TButton
+    Left = 200
+    Height = 25
+    Top = 184
+    Width = 75
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+end

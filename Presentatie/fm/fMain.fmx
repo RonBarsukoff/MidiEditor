@@ -1,0 +1,98 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Midi editor fm'
+  ClientHeight = 585
+  ClientWidth = 977
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object MenuBar1: TMenuBar
+    Size.Width = 977.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object miBestand: TMenuItem
+      Text = 'Bestand'
+      object miOpen: TMenuItem
+        Locked = True
+        Text = 'Open'
+        OnClick = miOpenClick
+      end
+      object miBewaarAls: TMenuItem
+        Locked = True
+        Text = 'Bewaar als'
+        OnClick = miBewaarAlsClick
+      end
+      object miOpenMidiBestand: TMenuItem
+        Locked = True
+        Text = 'Open midi bestand'
+        OnClick = miOpenMidiBestandClick
+      end
+      object miBewaarAlsMidiBestand: TMenuItem
+        Locked = True
+        Text = 'Bewaar als midi bestand'
+        OnClick = miBewaarAlsMidiBestandClick
+      end
+      object N1: TMenuItem
+        Locked = True
+        Text = '-'
+      end
+      object miAfsluiten: TMenuItem
+        Locked = True
+        Text = 'Afsluiten'
+        OnClick = miAfsluitenClick
+      end
+    end
+    object miInstellingen: TMenuItem
+      Text = 'Instellingen'
+      object miMidi: TMenuItem
+        Locked = True
+        Text = 'Midi'
+        OnClick = miMidiClick
+      end
+    end
+    object miAfspelen: TMenuItem
+      Text = 'Afspelen'
+      OnClick = miAfspelenClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Midi |*.mid'
+    Left = 224
+    Top = 24
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Midi |*.mid'
+    Left = 272
+    Top = 26
+  end
+  object pStatusBar: TPanel
+    Align = Bottom
+    Position.Y = 544.000000000000000000
+    Size.Width = 977.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object lMidiStatus: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'lMidiStatus'
+      TabOrder = 0
+    end
+  end
+  object pcEditors: TTabControl
+    Align = Client
+    Size.Width = 977.000000000000000000
+    Size.Height = 520.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    TabPosition = PlatformDefault
+    OnChange = pcEditorsChange
+  end
+end

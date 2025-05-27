@@ -1,0 +1,99 @@
+object frmMidiDialog: TfrmMidiDialog
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 199
+  ClientWidth = 424
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object cbMidiInDevices: TComboBox
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object cbMidiOutDevices: TComboBox
+    Position.X = 24.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object lMidiInDevice: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Midi in'
+    TabOrder = 2
+  end
+  object lMidiOutDevice: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 64.000000000000000000
+    Text = 'Midi uit'
+    TabOrder = 3
+  end
+  object bOk: TButton
+    Default = True
+    ModalResult = 1
+    Position.X = 128.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 4
+    Text = 'Ok'
+  end
+  object bCancel: TButton
+    Cancel = True
+    ModalResult = 2
+    Position.X = 216.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 5
+    Text = 'Cancel'
+  end
+  object bTestMidiOut: TSpeedButton
+    StaysPressed = True
+    Position.X = 320.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'buttonstyle'
+    Text = 'Test'
+    OnClick = bTestMidiOutClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 336
+    Top = 16
+  end
+  object cbTestMidiIn: TCheckBox
+    Position.X = 320.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 7
+    Text = 'Test'
+    OnChange = cbTestMidiInChange
+  end
+  object lIngespeeldeToon: TLabel
+    Position.X = 320.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'lIngespeeldeToon'
+    TabOrder = 8
+  end
+  object lMelding: TLabel
+    AutoSize = True
+    Position.X = 24.000000000000000000
+    Position.Y = 174.000000000000000000
+    Size.Width = 47.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'lMelding'
+    TabOrder = 9
+  end
+end

@@ -1,0 +1,187 @@
+object frmLeesMidifile: TfrmLeesMidifile
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 569
+  ClientWidth = 950
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object tcMain: TTabControl
+    Align = Client
+    Size.Width = 950.000000000000000000
+    Size.Height = 536.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    Sizes = (
+      950s
+      510s
+      950s
+      510s)
+    object tbAlgemeen: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 74.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Algemeen'
+      ExplicitSize.cx = 53.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object lbTracks: TListBox
+        Position.X = 16.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = lbTracksChange
+        Viewport.Width = 261.000000000000000000
+        Viewport.Height = 101.000000000000000000
+      end
+      object lbKanalen: TListBox
+        Position.X = 16.000000000000000000
+        Position.Y = 168.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 313.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = lbKanalenChange
+        Viewport.Width = 261.000000000000000000
+        Viewport.Height = 309.000000000000000000
+      end
+      object lTracks: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 14.000000000000000000
+        Text = 'Tracks'
+        TabOrder = 5
+      end
+      object lKanalen: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 150.000000000000000000
+        Text = 'Kanalen'
+        TabOrder = 6
+      end
+      object lEvents: TLabel
+        Position.X = 296.000000000000000000
+        Position.Y = 14.000000000000000000
+        Text = 'Noot events'
+        TabOrder = 9
+      end
+      object mNootEvents: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 296.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 451.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        Viewport.Width = 245.000000000000000000
+        Viewport.Height = 447.000000000000000000
+      end
+      object lOverigeEvents: TLabel
+        Position.X = 568.000000000000000000
+        Position.Y = 14.000000000000000000
+        Text = 'Overige events'
+        TabOrder = 7
+      end
+      object mOverigeEvents: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 560.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 369.000000000000000000
+        Size.Height = 273.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Viewport.Width = 365.000000000000000000
+        Viewport.Height = 269.000000000000000000
+      end
+      object lTeksten: TLabel
+        Position.X = 568.000000000000000000
+        Position.Y = 318.000000000000000000
+        Text = 'lTeksten'
+        TabOrder = 11
+      end
+      object mTeksten: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 560.000000000000000000
+        Position.Y = 336.000000000000000000
+        Size.Width = 369.000000000000000000
+        Size.Height = 145.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Viewport.Width = 365.000000000000000000
+        Viewport.Height = 141.000000000000000000
+      end
+    end
+    object tbOverige: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 62.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Overige'
+      ExplicitSize.cx = 62.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object lFormaat: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 30.000000000000000000
+        Text = 'Formaat'
+        TabOrder = 4
+      end
+      object lDivision: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 54.000000000000000000
+        Text = 'Division'
+        TabOrder = 5
+      end
+    end
+  end
+  object pOnder: TPanel
+    Align = Bottom
+    Position.Y = 536.000000000000000000
+    Size.Width = 950.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object bOk: TButton
+      Default = True
+      ModalResult = 1
+      Position.X = 760.000000000000000000
+      Position.Y = 6.000000000000000000
+      TabOrder = 1
+      Text = 'Ok'
+    end
+    object bCancel: TButton
+      Cancel = True
+      ModalResult = 2
+      Position.X = 856.000000000000000000
+      Position.Y = 6.000000000000000000
+      TabOrder = 2
+      Text = 'Cancel'
+    end
+  end
+end

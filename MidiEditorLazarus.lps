@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="MidiEditorLazarus.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="29"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/fmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fMain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMidiDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fMidiDialog"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="76" Y="6"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpAfspeelThread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="54" Y="61"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmptooninspeler.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="cmpToonInspeler"/>
+        <TopLine Value="2"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpAfspeler.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="164"/>
+        <CursorPos Y="207"/>
+        <UsageCount Value="59"/>
+        <Bookmarks Count="2">
+          <Item0 X="22" Y="175" ID="2"/>
+          <Item1 X="33" Y="100" ID="3"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpAfspeelevent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="cmpAfspeelEvent"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="158"/>
+        <CursorPos X="3" Y="162"/>
+        <UsageCount Value="59"/>
+        <Bookmarks Count="1">
+          <Item0 X="50" Y="46" ID="1"/>
+        </Bookmarks>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpAfspeellijst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="cmpAfspeelLijst"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/uTypes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13" Y="15"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/fLeesMidifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLeesMidifile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/fLeesMidifilemodel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fLeesMidifileModel"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/uProcs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="17" Y="36"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/uMMProcs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="10"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/frMidiEditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frameMidiEditor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="294"/>
+        <CursorPos X="64" Y="303"/>
+        <UsageCount Value="59"/>
+        <Bookmarks Count="1">
+          <Item0 X="30" Y="306" ID="1"/>
+        </Bookmarks>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/fMainModel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="60" Y="32"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/fToonEditormodel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fToonEditorModel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="603"/>
+        <CursorPos X="37" Y="625"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/TrackElementen/cmpTrackElement.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="64" Y="33"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpTonenObject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/TrackElementen/cmpVolumeChange.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/TrackElementen/cmpPedaal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/TrackElementen/cmpTempowisseling.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="cmpTempoWisseling"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/TrackElementen/cmpPanoramaChange.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/TrackElementen/cmpProgramChange.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="21"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/cmpShapes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/cmpEventShapes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpObjectInfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/frObjectnfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frameObjectInfo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="frObjectInfo"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/cmpStrings2D.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/fGeselecteerdeMoment.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGeselecteerdeMoment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umididevicewindows.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiDeviceWindows"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <CursorPos X="18" Y="5"/>
+        <UsageCount Value="50"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umidideviceslinux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiDevicesLinux"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="32"/>
+        <CursorPos X="40" Y="58"/>
+        <UsageCount Value="49"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umididevicefactory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiDeviceFactory"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="27"/>
+        <UsageCount Value="48"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umidiindevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiInDevice"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="62" Y="12"/>
+        <UsageCount Value="39"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umididevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiDevice"/>
+        <EditorIndex Value="6"/>
+        <CursorPos Y="31"/>
+        <UsageCount Value="38"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umidioutdevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiOutDevice"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="22" Y="12"/>
+        <UsageCount Value="38"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/umididevices.pas"/>
+        <UnitName Value="uMidiDevices"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="48" Y="16"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/fMidiDialogModel.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="42" Y="56"/>
+        <UsageCount Value="12"/>
+        <Bookmarks Count="1">
+          <Item0 X="44" Y="81" ID="1"/>
+        </Bookmarks>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/uMidiConstants.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="198"/>
+        <CursorPos X="26" Y="234"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpToon.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpMidiObject.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="35" Y="7"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <UnitName Value="uLinuxMidiIndevice"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="57"/>
+        <CursorPos Y="10"/>
+        <UsageCount Value="19"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/umididevice.pas"/>
+        <UnitName Value="uMidiDevice"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="71" Y="9"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/ulinuxmidioutdevice.pas"/>
+        <UnitName Value="uLinuxMidiOutDevice"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos Y="167"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpToonAfspeler.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/ualsadevice.pas"/>
+        <UnitName Value="uAlsaDevice"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="25"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/umidideviceslinux.pas"/>
+        <UnitName Value="uMidiDevicesLinux"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/lazarus/frObjectinfo.pas"/>
+        <ComponentName Value="frameObjectInfo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="frObjectInfo"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Presentatie/common/cmpToonShapes.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="266"/>
+        <CursorPos Y="288"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/cmpMidiEvent.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="112"/>
+        <CursorPos X="31" Y="134"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/seq_event.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="241"/>
+        <CursorPos X="3" Y="272"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory>
+      <Position>
+        <Filename Value="Logica/umididevice.pas"/>
+        <Caret Line="31"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="Logica/linux/ulinuxmidioutdevice.pas"/>
+        <Line Value="201"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

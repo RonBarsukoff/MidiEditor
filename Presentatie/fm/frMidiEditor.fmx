@@ -1,0 +1,287 @@
+object frameMidiEditor: TframeMidiEditor
+  Align = Client
+  Size.Width = 946.000000000000000000
+  Size.Height = 505.000000000000000000
+  Size.PlatformDefault = False
+  OnKeyDown = pPaintboxKeyDown
+  object pOnder: TPanel
+    Align = Bottom
+    Position.Y = 371.000000000000000000
+    Size.Width = 946.000000000000000000
+    Size.Height = 134.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    inline frameToonInfo: TframeObjectInfo
+      Align = Left
+      Size.Width = 193.000000000000000000
+      Size.Height = 134.000000000000000000
+      Size.PlatformDefault = False
+      inherited sgItems: TStringGrid
+        Size.Width = 193.000000000000000000
+        Size.Height = 117.000000000000000000
+        Viewport.Width = 189.000000000000000000
+        Viewport.Height = 97.000000000000000000
+      end
+      inherited lNaam: TLabel
+        Size.Width = 193.000000000000000000
+      end
+    end
+    object pEventInfos: TPanel
+      Align = Client
+      Size.Width = 753.000000000000000000
+      Size.Height = 134.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object pcMain: TTabControl
+    Align = Client
+    Size.Width = 946.000000000000000000
+    Size.Height = 371.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    Sizes = (
+      946s
+      345s
+      946s
+      345s)
+    object tsEditor: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 52.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Editor'
+      ExplicitSize.cx = 52.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object pPaintbox: TPanel
+        Align = Client
+        Size.Width = 766.000000000000000000
+        Size.Height = 345.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        OnKeyDown = pPaintboxKeyDown
+        object pbTonen: TPaintBox
+          Align = Client
+          ClipChildren = True
+          Opacity = 0.500000000000000000
+          Size.Width = 748.000000000000000000
+          Size.Height = 193.000000000000000000
+          Size.PlatformDefault = False
+          OnMouseDown = pbTonenMouseDown
+          OnMouseMove = pbTonenMouseMove
+          OnMouseUp = pbTonenMouseUp
+          OnPaint = pbTonenPaint
+          object shAfspeelwijzer: TLine
+            Anchors = [akLeft, akTop, akBottom]
+            LineType = Left
+            Position.X = 80.000000000000000000
+            Size.Width = 6.000000000000000000
+            Size.Height = 193.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claRed
+            Stroke.Thickness = 4.000000000000000000
+            Visible = False
+          end
+        end
+        object sbHorizontaal: TScrollBar
+          Align = Bottom
+          Max = 15000.000000000000000000
+          SmallChange = 0.000000000000000000
+          Orientation = Horizontal
+          Position.Y = 327.000000000000000000
+          Size.Width = 766.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          OnChange = sbHorizontaalChange
+          OnMouseWheel = sbHorizontaalMouseWheel
+        end
+        object sbVerticaal: TScrollBar
+          Align = Right
+          Max = 1000.000000000000000000
+          SmallChange = 0.000000000000000000
+          Orientation = Vertical
+          Position.X = 748.000000000000000000
+          Position.Y = 134.000000000000000000
+          Size.Width = 18.000000000000000000
+          Size.Height = 193.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          OnChange = sbVerticaalChange
+          OnMouseWheel = sbVerticaalMouseWheel
+        end
+        object pbLiniaal: TPaintBox
+          Align = Top
+          PopupMenu = pmLiniaal
+          Size.Width = 766.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          OnPaint = pbLiniaalPaint
+        end
+        object pbEvents: TPaintBox
+          Align = Top
+          Position.Y = 50.000000000000000000
+          Size.Width = 766.000000000000000000
+          Size.Height = 79.000000000000000000
+          Size.PlatformDefault = False
+          OnMouseDown = pbEventsMouseDown
+          OnPaint = pbEventsPaint
+        end
+        object Splitter1: TSplitter
+          Align = Top
+          Cursor = crVSplit
+          MinSize = 20.000000000000000000
+          Position.Y = 129.000000000000000000
+          Size.Width = 766.000000000000000000
+          Size.Height = 5.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object pTracks: TPanel
+        Align = Left
+        Size.Width = 180.000000000000000000
+        Size.Height = 345.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+    end
+    object tsInfo: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 41.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Info'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object pTonen: TPanel
+        Align = Left
+        Size.Width = 569.000000000000000000
+        Size.Height = 345.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        object lTrack: TLabel
+          Position.X = 1.000000000000000000
+          Position.Y = 8.000000000000000000
+          Text = 'Stem'
+          TabOrder = 9
+        end
+        object cbStem: TComboBox
+          Position.X = 1.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 280.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          OnChange = cbStemChange
+        end
+        object sgTonen: TStringGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 8.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 288.000000000000000000
+          Size.Height = 256.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, AutoDisplacement]
+          Viewport.Width = 288.000000000000000000
+          Viewport.Height = 256.000000000000000000
+          object StringColumn1: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn2: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn3: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn4: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn5: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+        end
+        object sgEvents: TStringGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 304.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 256.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 11
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, AutoDisplacement]
+          Viewport.Width = 257.000000000000000000
+          Viewport.Height = 256.000000000000000000
+          object StringColumn6: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn7: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn8: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn9: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+        end
+      end
+      object gbTempoWisselingen: TGroupBox
+        Position.X = 577.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 312.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Tempowisselingen'
+        TabOrder = 9
+        object sgTempoWisselingen: TStringGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 16.000000000000000000
+          Position.Y = 32.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 272.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 37
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, AutoDisplacement]
+          Viewport.Width = 193.000000000000000000
+          Viewport.Height = 272.000000000000000000
+          object StringColumn10: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          object StringColumn11: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+        end
+      end
+      object eDivision: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        Position.X = 808.000000000000000000
+        Position.Y = 46.000000000000000000
+      end
+    end
+  end
+  object pmLiniaal: TPopupMenu
+    Left = 628
+    Top = 42
+    object miGeselecteerdeMoment: TMenuItem
+      Text = 'Geselecteerde moment ...'
+      OnClick = miGeselecteerdeMomentClick
+    end
+  end
+end

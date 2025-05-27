@@ -1,0 +1,29 @@
+object frameStemControls: TframeStemControls
+  Left = 0
+  Height = 53
+  Top = 0
+  Width = 186
+  ClientHeight = 53
+  ClientWidth = 186
+  TabOrder = 0
+  DesignLeft = 1987
+  DesignTop = 77
+  object lNaam: TLabel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 186
+    Align = alTop
+    Caption = 'lNaam'
+    Color = clDefault
+    Transparent = False
+  end
+  object cbZichtbaar: TCheckBox
+    Left = 3
+    Height = 19
+    Top = 20
+    Width = 70
+    Caption = 'Zichtbaar'
+    TabOrder = 0
+  end
+end

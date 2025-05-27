@@ -1,0 +1,168 @@
+object frmLeesMidifile: TfrmLeesMidifile
+  Left = 2541
+  Height = 675
+  Top = 201
+  Width = 863
+  Caption = 'frmLeesMidifile'
+  ClientHeight = 675
+  ClientWidth = 863
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poDefaultPosOnly
+  LCLVersion = '2.2.6.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 625
+    Top = 0
+    Width = 863
+    ActivePage = tsAlgemeen
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object tsAlgemeen: TTabSheet
+      Caption = 'Algemeen'
+      ClientHeight = 597
+      ClientWidth = 855
+      object lTracks: TLabel
+        Left = 8
+        Height = 15
+        Top = 8
+        Width = 32
+        Caption = 'Tracks'
+        ParentColor = False
+      end
+      object lKanalen: TLabel
+        Left = 8
+        Height = 15
+        Top = 116
+        Width = 42
+        Caption = 'Kanalen'
+        ParentColor = False
+      end
+      object lEvents: TLabel
+        Left = 248
+        Height = 15
+        Top = 8
+        Width = 34
+        Caption = 'Events'
+        ParentColor = False
+      end
+      object lOverigeEvents: TLabel
+        Left = 512
+        Height = 15
+        Top = 8
+        Width = 78
+        Caption = 'Overige events'
+        ParentColor = False
+      end
+      object lTeksten: TLabel
+        Left = 512
+        Height = 15
+        Top = 288
+        Width = 39
+        Caption = 'Teksten'
+        ParentColor = False
+      end
+      object lbTracks: TListBox
+        Left = 8
+        Height = 73
+        Top = 24
+        Width = 225
+        ItemHeight = 0
+        OnClick = lbTracksClick
+        TabOrder = 0
+      end
+      object lbKanalen: TListBox
+        Left = 8
+        Height = 361
+        Top = 132
+        Width = 225
+        ItemHeight = 0
+        OnClick = lbKanalenClick
+        TabOrder = 1
+      end
+      object mNootEvents: TMemo
+        Left = 248
+        Height = 469
+        Top = 24
+        Width = 249
+        Lines.Strings = (
+          'mNootEvents'
+        )
+        TabOrder = 2
+      end
+      object mOverigeEvents: TMemo
+        Left = 512
+        Height = 257
+        Top = 24
+        Width = 281
+        Lines.Strings = (
+          'mOverigeEvents'
+        )
+        TabOrder = 3
+      end
+      object mTeksten: TMemo
+        Left = 512
+        Height = 189
+        Top = 304
+        Width = 281
+        Lines.Strings = (
+          'mTeksten'
+        )
+        TabOrder = 4
+      end
+    end
+    object tsOverige: TTabSheet
+      Caption = 'Overige'
+      ClientHeight = 597
+      ClientWidth = 855
+      ImageIndex = 1
+      object lFormaat: TLabel
+        Left = 16
+        Height = 15
+        Top = 24
+        Width = 47
+        Caption = 'lFormaat'
+        ParentColor = False
+      end
+      object lDivision: TLabel
+        Left = 16
+        Height = 15
+        Top = 48
+        Width = 45
+        Caption = 'lDivision'
+        ParentColor = False
+      end
+    end
+  end
+  object pOnder: TPanel
+    Left = 0
+    Height = 50
+    Top = 625
+    Width = 863
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 863
+    TabOrder = 1
+    object bOk: TButton
+      Left = 655
+      Height = 25
+      Top = 15
+      Width = 75
+      Caption = 'Ok'
+      Default = True
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object bCancel: TButton
+      Left = 746
+      Height = 25
+      Top = 16
+      Width = 75
+      Cancel = True
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+end

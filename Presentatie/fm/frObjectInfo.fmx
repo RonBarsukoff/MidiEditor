@@ -1,0 +1,32 @@
+object frameObjectInfo: TframeObjectInfo
+  Size.Width = 225.000000000000000000
+  Size.Height = 118.000000000000000000
+  Size.PlatformDefault = False
+  object sgItems: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 225.000000000000000000
+    Size.Height = 101.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowHeight = 18.000000000000000000
+    RowCount = 3
+    Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, Tabs, HeaderClick, AutoDisplacement]
+    Viewport.Width = 225.000000000000000000
+    Viewport.Height = 101.000000000000000000
+    object StringColumn1: TStringColumn
+    end
+    object StringColumn2: TStringColumn
+    end
+  end
+  object lNaam: TLabel
+    Align = Top
+    Size.Width = 225.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'lNaam'
+    TabOrder = 1
+  end
+end

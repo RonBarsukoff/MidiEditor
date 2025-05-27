@@ -1,0 +1,93 @@
+object frmMain: TfrmMain
+  Left = 2343
+  Height = 532
+  Top = 159
+  Width = 813
+  Caption = 'Midi editor'
+  ClientHeight = 532
+  ClientWidth = 813
+  KeyPreview = True
+  Menu = MainMenu1
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  LCLVersion = '3.0.0.3'
+  object pStatusBar: TPanel
+    Left = 0
+    Height = 26
+    Top = 506
+    Width = 813
+    Align = alBottom
+    ClientHeight = 26
+    ClientWidth = 813
+    TabOrder = 0
+    object lMidiStatus: TLabel
+      Left = 13
+      Height = 16
+      Top = 3
+      Width = 67
+      Caption = 'lMidiStatus'
+      ParentColor = False
+    end
+  end
+  object pcEditors: TPageControl
+    Left = 0
+    Height = 506
+    Top = 0
+    Width = 813
+    Align = alClient
+    TabOrder = 1
+    OnChange = pcEditorsChange
+  end
+  object MainMenu1: TMainMenu
+    Left = 230
+    Top = 77
+    object miBestand: TMenuItem
+      Caption = 'Bestand'
+      object miOpen: TMenuItem
+        Caption = 'Open'
+        OnClick = miOpenClick
+      end
+      object miBewaarAls: TMenuItem
+        Caption = 'Bewaar als'
+        OnClick = miBewaarAlsClick
+      end
+      object miOpenMidiBestand: TMenuItem
+        Caption = 'Open midi bestand'
+        OnClick = miOpenMidiBestandClick
+      end
+      object miBewaarAlsMidibestand: TMenuItem
+        Caption = 'Bewaar als midi bestand'
+        OnClick = miBewaarAlsMidibestandClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object miAfsluiten: TMenuItem
+        Caption = 'Afsluiten'
+        OnClick = miAfsluitenClick
+      end
+    end
+    object miInstellingen: TMenuItem
+      Caption = 'Instellingen'
+      object miMidi: TMenuItem
+        Caption = 'Midi'
+        OnClick = miMidiClick
+      end
+    end
+    object miAfspelen: TMenuItem
+      Caption = 'Afspelen'
+      OnClick = miAfspelenClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Midi files|*.mid'
+    Left = 552
+    Top = 112
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 614
+    Top = 113
+  end
+end

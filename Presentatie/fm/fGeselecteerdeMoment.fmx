@@ -1,0 +1,51 @@
+object frmGeselecteerdeMoment: TfrmGeselecteerdeMoment
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 184
+  ClientWidth = 274
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object bOk: TButton
+    Default = True
+    ModalResult = 1
+    Position.X = 72.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 2
+    Text = 'Ok'
+  end
+  object bCancel: TButton
+    Cancel = True
+    ModalResult = 2
+    Position.X = 160.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 3
+    Text = 'Cancel'
+  end
+  object eMoment: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 8.000000000000000000
+    Position.Y = 25.000000000000000000
+  end
+  object eNaarMoment: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+  end
+  object lMoment: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Moment'
+    TabOrder = 6
+  end
+  object lNaarMoment: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 55.000000000000000000
+    Text = 'Naar moment'
+    TabOrder = 5
+  end
+end
