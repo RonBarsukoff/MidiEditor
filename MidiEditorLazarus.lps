@@ -7,9 +7,11 @@
       <Unit>
         <Filename Value="MidiEditorLazarus.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="43" Y="29"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="27" Y="18"/>
         <UsageCount Value="59"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -34,6 +36,7 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="76" Y="6"/>
         <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpAfspeelThread.pas"/>
@@ -42,6 +45,7 @@
         <TopLine Value="47"/>
         <CursorPos X="54" Y="61"/>
         <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmptooninspeler.pas"/>
@@ -51,6 +55,7 @@
         <CursorPos Y="34"/>
         <UsageCount Value="59"/>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpAfspeler.pas"/>
@@ -64,6 +69,7 @@
           <Item1 X="33" Y="100" ID="3"/>
         </Bookmarks>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpAfspeelevent.pas"/>
@@ -76,6 +82,7 @@
         <Bookmarks Count="1">
           <Item0 X="50" Y="46" ID="1"/>
         </Bookmarks>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpAfspeellijst.pas"/>
@@ -90,6 +97,7 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="13" Y="15"/>
         <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/fLeesMidifile.pas"/>
@@ -137,6 +145,7 @@
         <Bookmarks Count="1">
           <Item0 X="30" Y="306" ID="1"/>
         </Bookmarks>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/fMainModel.pas"/>
@@ -144,6 +153,7 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="60" Y="32"/>
         <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/fToonEditormodel.pas"/>
@@ -153,13 +163,15 @@
         <TopLine Value="603"/>
         <CursorPos X="37" Y="625"/>
         <UsageCount Value="59"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpTrackElement.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="64" Y="33"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="39" Y="13"/>
         <UsageCount Value="59"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -275,6 +287,7 @@
         <EditorIndex Value="-1"/>
         <CursorPos Y="27"/>
         <UsageCount Value="48"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umidiindevice.pas"/>
@@ -283,15 +296,17 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="62" Y="12"/>
         <UsageCount Value="39"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevice.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMidiDevice"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="9"/>
         <CursorPos Y="31"/>
         <UsageCount Value="38"/>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umidioutdevice.pas"/>
@@ -301,14 +316,40 @@
         <CursorPos X="22" Y="12"/>
         <UsageCount Value="38"/>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/windows/umidideviceswindows.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiDevicesWindows"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/windows/uwindowsmidiindevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uWindowsMidiInDevice"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/windows/uwindowsmidioutdevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uWindowsMidiOutDevice"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="7"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevices.pas"/>
         <UnitName Value="uMidiDevices"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="48" Y="16"/>
+        <CursorPos X="35" Y="16"/>
         <UsageCount Value="16"/>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/fMidiDialogModel.pas"/>
@@ -319,6 +360,7 @@
         <Bookmarks Count="1">
           <Item0 X="44" Y="81" ID="1"/>
         </Bookmarks>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/uMidiConstants.pas"/>
@@ -326,6 +368,7 @@
         <TopLine Value="198"/>
         <CursorPos X="26" Y="234"/>
         <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpToon.pas"/>
@@ -344,10 +387,9 @@
       <Unit>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
         <UnitName Value="uLinuxMidiIndevice"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="57"/>
-        <CursorPos Y="10"/>
+        <TopLine Value="10"/>
+        <CursorPos X="24" Y="26"/>
         <UsageCount Value="19"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -367,12 +409,14 @@
         <TopLine Value="145"/>
         <CursorPos Y="167"/>
         <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpToonAfspeler.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="57"/>
         <UsageCount Value="19"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/linux/ualsadevice.pas"/>
@@ -380,6 +424,7 @@
         <EditorIndex Value="-1"/>
         <CursorPos Y="25"/>
         <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/linux/umidideviceslinux.pas"/>
@@ -387,6 +432,7 @@
         <EditorIndex Value="4"/>
         <UsageCount Value="15"/>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/frObjectinfo.pas"/>
@@ -398,6 +444,7 @@
         <TopLine Value="31"/>
         <CursorPos Y="56"/>
         <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/cmpToonShapes.pas"/>
@@ -405,6 +452,7 @@
         <TopLine Value="266"/>
         <CursorPos Y="288"/>
         <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpMidiEvent.pas"/>
@@ -412,6 +460,7 @@
         <TopLine Value="112"/>
         <CursorPos X="31" Y="134"/>
         <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/linux/seq_event.inc"/>
@@ -419,12 +468,21 @@
         <TopLine Value="241"/>
         <CursorPos X="3" Y="272"/>
         <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
     </Units>
-    <JumpHistory>
+    <JumpHistory HistoryIndex="2">
       <Position>
         <Filename Value="Logica/umididevice.pas"/>
         <Caret Line="31"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="26" Column="24" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/TrackElementen/cmpTrackElement.pas"/>
+        <Caret Line="13" Column="39"/>
       </Position>
     </JumpHistory>
     <RunParams>

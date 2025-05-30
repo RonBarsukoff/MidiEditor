@@ -206,17 +206,32 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMidiOutDevice"/>
       </Unit>
+      <Unit>
+        <Filename Value="Logica\windows\umidideviceswindows.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMidiDevicesWindows"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica\windows\uwindowsmidiindevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uWindowsMidiInDevice"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica\windows\uwindowsmidioutdevice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uWindowsMidiOutDevice"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="\home\ron\fpBin\MidiEditor\Bin\MidiEditorLazarus"/>
+      <Filename Value="\home\ron\fpBin\MidiEditor\MidiEditorLazarus"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Presentatie\lazarus;Presentatie\common;Logica;Logica\linux;Logica\TrackElementen;..\DLib"/>
+      <OtherUnitFiles Value="Presentatie\lazarus;Presentatie\common;Logica;Logica\linux;Logica\windows;Logica\TrackElementen;DLib"/>
       <UnitOutputDirectory Value="\home\ron\fpBin\MidiEditor\lib"/>
     </SearchPaths>
     <Parsing>
