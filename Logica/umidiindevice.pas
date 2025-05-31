@@ -5,15 +5,13 @@ interface
 uses
   Classes, SysUtils,
 
-  uMidiDevice;
+  uMidiDevice,
+  uCommonTypes;
 
 type
-  TMidiBuffer = array[0..31] of byte;
-  TOnMidiInput = procedure(aBuffer:TMidiBuffer; size:integer) of object;
-
   TMidiInDevice = class(TMidiDevice)
   public
-    OnMidiInput: TOnMidiInput;
+    OnToonEvent: TToonInEvent;
   end;
 
 implementation

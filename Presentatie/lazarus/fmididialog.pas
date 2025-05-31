@@ -134,7 +134,7 @@ begin
   if aToon.Aan then
     lIngespeeldeToon.Caption := IntToStr(aToon.Hoogte)
   else
-    lIngespeeldeToon.Caption := '';
+    lIngespeeldeToon.Caption := 'Uit: '+IntToStr(aToon.Hoogte);
 end;
 
 procedure TfrmMidiDialog.HandleMidiInStatusUpdate(aOk: Boolean; const aMelding: String);

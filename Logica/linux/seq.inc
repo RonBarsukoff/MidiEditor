@@ -572,7 +572,7 @@ function snd_seq_set_queue_timer(handle: Psnd_seq_t; q: cint; timer: Psnd_seq_qu
  *  \{
  *)
 
-function snd_seq_free_event(ev: Psnd_seq_event_t): cint; cdecl; external libasound;
+//function snd_seq_free_event(ev: Psnd_seq_event_t): cint; cdecl; external libasound; deprecated
 function snd_seq_event_length(ev: Psnd_seq_event_t): ssize_t; cdecl; external libasound;
 function snd_seq_event_output(handle: Psnd_seq_t; ev: Psnd_seq_event_t): cint; cdecl; external libasound;
 function snd_seq_event_output_buffer(handle: Psnd_seq_t; ev: Psnd_seq_event_t): cint; cdecl; external libasound;

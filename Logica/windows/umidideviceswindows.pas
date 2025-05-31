@@ -37,14 +37,14 @@ begin
     R := midiInGetDevCaps(I, @P, SizeOf(P));
     if R = 0 then
     begin
-      myMidiDevice := TWindowsMidiInDevice.Create;
+      myMidiDevice := TWindowsMidiInDevice.Create(I);
       fInDeviceList.AddObject(P.szPName, myMidiDevice)
     end;
   end;
   R := MidiInGetDevCaps(midi_mapper, @P, SizeOf(P));
   if R = 0 then
   begin
-    myMidiDevice := TWindowsMidiInDevice.Create;
+    myMidiDevice := TWindowsMidiInDevice.Create(UInt(midi_mapper));
     fInDeviceList.AddObject(P.szPName, myMidiDevice)
   end;
 end;

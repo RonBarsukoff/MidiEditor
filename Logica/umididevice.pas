@@ -15,6 +15,8 @@ type
     procedure Open; virtual; abstract;
     procedure Close; virtual; abstract;
     function getIsOk: Boolean;
+    function Readable: Boolean; virtual;
+    function Writable: Boolean; virtual;
   public
     property IsOpen: Boolean read getIsOpen write setIsOpen;
     property LastResult: String read FLastResult;
@@ -37,6 +39,16 @@ end;
 function TMidiDevice.getIsOk: Boolean;
 begin
   Result := FLastResult = '';
+end;
+
+function TMidiDevice.Readable: Boolean;
+begin
+  Result := False;
+end;
+
+function TMidiDevice.Writable: Boolean;
+begin
+  Result := False;
 end;
 
 end.

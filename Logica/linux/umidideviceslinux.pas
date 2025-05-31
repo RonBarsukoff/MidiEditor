@@ -32,6 +32,11 @@ var
   myCurrentClient: integer;
   mySelectedDevice: TLinuxMidiInDevice;
   mySeqHandle: Psnd_seq_t;
+  myCapabilities,
+  myPortType: DWord;
+  myClientName: String;
+const
+  cReadable = SND_SEQ_PORT_CAP_SUBS_READ or SND_SEQ_PORT_CAP_READ or SND_SEQ_PORT_CAP_SYNC_READ; (* All required *)
 begin
   ClearMidiInDevices;
   myStatus := snd_seq_open(@mySeqHandle, 'default', SND_SEQ_OPEN_INPUT, 0);
@@ -51,13 +56,16 @@ begin
             snd_seq_port_info_set_port(myPortInfo, -1);
             while (snd_seq_query_next_port(mySeqHandle, myPortInfo) >= 0) do
             begin
-              mySelectedDevice := TLinuxMidiInDevice.Create('MidiEditor');
-              mySelectedDevice.Init(mySeqHandle, myPortinfo, myClientInfo);
-              if (mySelectedDevice.AlsaDevice.PortType = 0)
-              or not mySelectedDevice.AlsaDevice.Readable then
-                mySelectedDevice.Free
-              else
-                fInDeviceList.AddObject(mySelectedDevice.AlsaDevice.ClientName, mySelectedDevice)
+              myPortType := snd_seq_port_info_get_type(myPortInfo);
+              myCapabilities := snd_seq_port_info_get_capability(myPortinfo);
+              if (myPortType <> 0)
+              and ((myCapabilities and cReadable) = cReadable) then
+              begin
+                mySelectedDevice := TLinuxMidiInDevice.Create('MidiEditor');
+                mySelectedDevice.Init(mySeqHandle, myPortinfo, myClientInfo);
+                myClientName := snd_seq_client_info_get_name(myClientInfo);
+                fInDeviceList.AddObject(myClientName, mySelectedDevice)
+              end;
             end { while }
           finally
             snd_seq_port_info_free(myPortInfo);
@@ -79,8 +87,13 @@ var
   myCurrentClient: integer;
   mySelectedDevice: TLinuxMidiOutDevice;
   mySeqHandle: Psnd_seq_t;
-  const
-    cSynthesizer= SND_SEQ_PORT_TYPE_SYNTHESIZER { or SND_SEQ_PORT_TYPE_PORT } ; (* Either required *)
+  myCapabilities,
+  myPortType: DWord;
+  myClientName,
+  myPortName: String;
+const
+  cSynthesizer= SND_SEQ_PORT_TYPE_SYNTHESIZER or SND_SEQ_PORT_TYPE_PORT; (* Either required *)
+  cWritable = SND_SEQ_PORT_CAP_SUBS_WRITE or SND_SEQ_PORT_CAP_WRITE; (* Both required *)
 begin
   ClearMidiOutDevices;
 
@@ -107,18 +120,17 @@ begin
             snd_seq_port_info_set_port(myPortInfo, -1);
             while (snd_seq_query_next_port(mySeqHandle, myPortInfo) >= 0) do
             begin
-              mySelectedDevice := TLinuxMidiOutDevice.Create('MidiEditor');
-              mySelectedDevice.Init(mySeqHandle, myPortinfo, myClientInfo);
-              if mySelectedDevice.AlsaDevice.Writable
-              and ((mySelectedDevice.AlsaDevice.PortType and cSynthesizer) <> 0) then
+              myCapabilities := snd_seq_port_info_get_capability(myPortinfo);
+              myPortType := snd_seq_port_info_get_type(myPortInfo);
+              myPortName := snd_seq_port_info_get_name(myPortInfo);
+              if ((myCapaBilities and cWritable) = cWritable)
+              and ((myPortType and cSynthesizer) <> 0)
+              and (Pos('through', LowerCase(myPortName)) < 1) then
               begin
-                fOutDeviceList.AddObject(mySelectedDevice.AlsaDevice.Clientname, mySelectedDevice);
-                mySelectedDevice := nil   (* Object is in list                    *)
-              end
-              else
-              begin
-                Warning(Format('%s is geen outputdevice', [mySelectedDevice.AlsaDevice.Clientname]));
-                mySelectedDevice.Free;
+                mySelectedDevice := TLinuxMidiOutDevice.Create('MidiEditor');
+                mySelectedDevice.Init(mySeqHandle, myPortinfo, myClientInfo);
+                myClientName := snd_seq_client_info_get_name(myClientInfo);
+                fOutDeviceList.AddObject(myClientname, mySelectedDevice);
               end;
             end { while }
           finally

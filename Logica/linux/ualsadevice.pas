@@ -24,7 +24,6 @@ type
     destructor Destroy; override;
     procedure Close;
     function Writable: Boolean;
-    function Readable: Boolean;
     property AppName: String read FAppName;
   end;
 
@@ -39,13 +38,6 @@ end;
 destructor TAlsaDevice.Destroy;
 begin
   inherited Destroy;
-end;
-
-function TAlsaDevice.Readable: Boolean;
-const
-  cReadable = SND_SEQ_PORT_CAP_SUBS_READ or SND_SEQ_PORT_CAP_READ or SND_SEQ_PORT_CAP_SYNC_READ; (* All required *)
-begin
-  Result := (Capabilities and cReadable) = cReadable;
 end;
 
 function TAlsaDevice.Writable: Boolean;

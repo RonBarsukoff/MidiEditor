@@ -1,7 +1,5 @@
 program MidiEditorLazarus;
 
-{$mode objfpc}{$H+}
-
 uses
   {$IFDEF UNIX}
   cthreads,
@@ -16,7 +14,8 @@ uses
   cmpTrackElement, cmpTonenObject, cmpVolumeChange, cmpPedaal,
   cmpTempowisseling, cmpPanoramaChange, cmpProgramChange, cmpEventShapes, 
 cmpObjectInfo, frObjectinfo, cmpStrings2D, fGeselecteerdeMoment,
-uMidiDeviceFactory, uMidiInDevice, uMidiDevice, uMidiOutDevice;
+uMidiDeviceFactory, uMidiInDevice, uMidiDevice, uMidiOutDevice, 
+uLinuxMidiInspeelThread;
 
 {$R *.res}
 

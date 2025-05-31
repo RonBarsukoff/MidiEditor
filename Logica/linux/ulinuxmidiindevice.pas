@@ -7,6 +7,8 @@ uses
 
   asoundlib,
   uAlsaDevice,
+  uCommonTypes,
+  uLinuxMidiInspeelThread,
   uMidiInDevice;
 
 type
@@ -15,23 +17,22 @@ type
     FAlsaDevice: TAlsaDevice;
     FSubscription:Psnd_seq_port_subscribe_t;
     FSubscribed: Boolean;
-    FCoder: Psnd_midi_event_t;
-    FBuffer:TMidiBuffer;
+    //FCoder: Psnd_midi_event_t;
+    FInspeelThread: TLinuxMidiInspeelThread;
     procedure Subscribe;
     procedure UnSubscribe;
     procedure Warning(aMessage: String);
+    procedure GetMidiInEvents;
+    procedure handleToonEvent(aAfspeelToon: TAfspeelToon);
   protected
     procedure Open; override;
     procedure Close; override;
     function GetIsOpen: Boolean; override;
   public
-    OnMidiInput: TOnMidiInput;
     constructor Create(aAppName: String);
     destructor Destroy; override;
     procedure Init(aSeqHandle: Psnd_seq_t; aPortInfo: Psnd_seq_port_info_t;
       aClientinfo: Psnd_seq_client_info_t);
-    procedure GetMidiInEvents;
-    property AlsaDevice: TAlsaDevice read FAlsaDevice;
   end;
 
 implementation
@@ -67,27 +68,26 @@ procedure TLinuxMidiInDevice.GetMidiInEvents;
 var
   r: integer;
   ev: psnd_seq_event_t;
-  nBytes: integer;
-  myMaxByteCount: Integer;
+  myAfspeelToon: TAfspeelToon;
+  myType: snd_seq_event_type;
 begin
-  myMaxByteCount := 128;
-  r := snd_midi_event_new(myMaxByteCount, @FCoder );
-  if ( r < 0 ) then exit;
-  snd_midi_event_init(FCoder);
-  snd_midi_event_no_status(FCoder, 1); // dont suppress running status messages
-
   r:= snd_seq_event_input(FAlsaDevice.SeqHandle, @ev );
   if r < 0 then
     Warning(snd_strError(r));
   while ( r > 0 ) do
   begin
-    nBytes := snd_midi_event_decode(FCoder, @FBuffer, myMaxByteCount, ev );
-    if (nBytes > 0 ) and assigned(OnMidiInput) then
-      if FBuffer[0] <> 254 then
-        OnMidiInput(FBuffer,nBytes);
+    myType := snd_seq_event_type(ev.type_);
+    if myType in [SND_SEQ_EVENT_NOTE, SND_SEQ_EVENT_NOTEON, SND_SEQ_EVENT_NOTEOFF, SND_SEQ_EVENT_KEYPRESS] then
+    begin
+      myAfspeelToon.Aan := ev^.data.note.velocity <> 0;
+      myAfspeelToon.Hoogte:= ev^.data.note.note;
+      myAfspeelToon.Velocity:= ev^.data.note.velocity;
+      myAfspeelToon.Kanaal:= ev^.data.note.channel;
+      myAfspeelToon.Lengte:= 1;
+      OnToonEvent(myAfspeelToon);
+    end;
     r:= snd_seq_event_input(FAlsaDevice.SeqHandle, @ev );
   end;
-  snd_seq_free_event(ev);
 end;
 
 procedure TLinuxMidiInDevice.Subscribe;
@@ -182,11 +182,18 @@ begin
   end;
 
   Subscribe;
+  FInspeelThread := TLinuxMidiInspeelThread.Create(True);
+  FInspeelThread.SeqHandle := FAlsaDevice.SeqHandle;
+  FInspeelThread.OnToonEvent := handleToonEvent;
+  FInspeelThread.Start;
   FAlsaDevice.IsOpen := True;
 end;
 
 procedure TLinuxMidiInDevice.Close;
 begin
+  FInspeelThread.Terminate;
+  FreeAndNil(FInspeelThread);
+//  GetMidiInEvents;
   UnSubscribe;
   FAlsaDevice.Close;
 end;
@@ -199,6 +206,12 @@ end;
 procedure TLinuxMidiInDevice.Warning(aMessage: String);
 begin
   WriteLn(aMessage)
+end;
+
+procedure TLinuxMidiInDevice.handleToonEvent(aAfspeelToon: TAfspeelToon);
+begin
+  if Assigned(OnToonEvent) then
+    OnToonEvent(aAfspeelToon);
 end;
 
 end.

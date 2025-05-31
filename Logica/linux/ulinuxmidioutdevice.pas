@@ -25,8 +25,6 @@ type
     procedure Init(aSeqHandle: Psnd_seq_t; aPortInfo: Psnd_seq_port_info_t;
       aClientinfo: Psnd_seq_client_info_t);
     procedure ToonAan(aKanaal, aHoogte, aVelocity: byte); override;
-    procedure SendShortMessage(aMessage: LongInt); override;
-    property AlsaDevice: TAlsaDevice read FAlsaDevice;
   end;
 
 implementation
@@ -192,36 +190,36 @@ begin
   end;
 end;
 
-procedure TLinuxMidiOutDevice.SendShortMessage(aMessage: LongInt);
-var
-  ev: snd_seq_event_t;
-  myOk: Boolean;
-  i: Integer;
-begin
-  snd_seq_ev_clear(@ev);
-  ev.queue := FSeqQueue;
-  ev.source.port := 0;
-  ev.flags := SND_SEQ_TIME_STAMP_REAL + SND_SEQ_TIME_MODE_REL;
-  ev.time.time.tv_sec := 0;
-  ev.time.time.tv_nsec := 0;
-  ev.type_ := byte(SND_SEQ_EVENT_OSS);
-  ev.data.raw32.d[0] := byte(aMessage);
-  ev.data.raw32.d[1] := byte(aMessage shr 8);
-  ev.data.raw32.d[2] := byte(aMessage shr 16);
-  ev.dest.client := FAlsaDevice.Destination.client;
-  ev.dest.port := FAlsaDevice.Destination.port;
-  myOk := True;
-  i := snd_seq_event_output(FAlsaDevice.SeqHandle, @ev);
-  if i < 0 then
-    myOk := false;
-  if myOk then
-  begin
-    i := snd_seq_drain_output(FAlsaDevice.SeqHandle);
-    if i < 0 then
-      myOk := false;
-  end;
-end;
-
+//procedure TLinuxMidiOutDevice.SendShortMessage(aMessage: LongInt);
+//var
+//  ev: snd_seq_event_t;
+//  myOk: Boolean;
+//  i: Integer;
+//begin
+//  snd_seq_ev_clear(@ev);
+//  ev.queue := FSeqQueue;
+//  ev.source.port := 0;
+//  ev.flags := SND_SEQ_TIME_STAMP_REAL + SND_SEQ_TIME_MODE_REL;
+//  ev.time.time.tv_sec := 0;
+//  ev.time.time.tv_nsec := 0;
+//  ev.type_ := byte(SND_SEQ_EVENT_OSS);
+//  ev.data.raw32.d[0] := byte(aMessage);
+//  ev.data.raw32.d[1] := byte(aMessage shr 8);
+//  ev.data.raw32.d[2] := byte(aMessage shr 16);
+//  ev.dest.client := FAlsaDevice.Destination.client;
+//  ev.dest.port := FAlsaDevice.Destination.port;
+//  myOk := True;
+//  i := snd_seq_event_output(FAlsaDevice.SeqHandle, @ev);
+//  if i < 0 then
+//    myOk := false;
+//  if myOk then
+//  begin
+//    i := snd_seq_drain_output(FAlsaDevice.SeqHandle);
+//    if i < 0 then
+//      myOk := false;
+//  end;
+//end;
+//
 procedure TLinuxMidiOutDevice.Close;
 begin
   if FAlsaDevice.IsOpen then

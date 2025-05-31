@@ -221,6 +221,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uWindowsMidiOutDevice"/>
       </Unit>
+      <Unit>
+        <Filename Value="Logica\linux\ulinuxmidiinspeelthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLinuxMidiInspeelThread"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -240,7 +245,6 @@
         <CStyleOperator Value="False"/>
         <IncludeAssertionCode Value="True"/>
         <AllowLabel Value="False"/>
-        <UseAnsiStrings Value="False"/>
         <CPPInline Value="False"/>
       </SyntaxOptions>
     </Parsing>
