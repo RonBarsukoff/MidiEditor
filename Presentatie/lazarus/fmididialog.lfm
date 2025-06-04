@@ -4,11 +4,13 @@ object frmMidiDialog: TfrmMidiDialog
   Top = 147
   Width = 427
   BorderIcons = []
+  BorderStyle = bsDialog
   Caption = 'Midi instellingen'
   ClientHeight = 204
   ClientWidth = 427
   OnCreate = FormCreate
   OnDestroy = FormDestroy
+  OnShow = FormShow
   Position = poDefault
   LCLVersion = '3.0.0.3'
   object lMidiInDevice: TLabel

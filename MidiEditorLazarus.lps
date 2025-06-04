@@ -9,7 +9,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="15" Y="14"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/fmain.pas"/>
@@ -20,7 +20,7 @@
         <UnitName Value="fMain"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
@@ -29,10 +29,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="fMidiDialog"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="105"/>
-        <CursorPos Y="137"/>
-        <UsageCount Value="70"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="102"/>
+        <CursorPos X="37" Y="118"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -43,18 +44,17 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="40" Y="69"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmptooninspeler.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="cmpToonInspeler"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="46"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="45"/>
         <CursorPos Y="83"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpAfspeler.pas"/>
@@ -62,7 +62,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="164"/>
         <CursorPos Y="207"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
         <Bookmarks Count="2">
           <Item0 X="22" Y="175" ID="2"/>
           <Item1 X="33" Y="100" ID="3"/>
@@ -75,7 +75,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="158"/>
         <CursorPos X="3" Y="162"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
         <Bookmarks Count="1">
           <Item0 X="50" Y="46" ID="1"/>
         </Bookmarks>
@@ -84,14 +84,14 @@
         <Filename Value="Logica/cmpAfspeellijst.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="cmpAfspeelLijst"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/uTypes.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="13" Y="15"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/fLeesMidifile.pas"/>
@@ -99,13 +99,13 @@
         <ComponentName Value="frmLeesMidifile"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/fLeesMidifilemodel.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fLeesMidifileModel"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/uProcs.pas"/>
@@ -113,14 +113,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="17" Y="36"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/uMMProcs.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="31" Y="10"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/frMidiEditor.pas"/>
@@ -130,7 +130,7 @@
         <ResourceBaseClass Value="Frame"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="25" Y="6"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
         <Bookmarks Count="1">
           <Item0 X="30" Y="306" ID="1"/>
         </Bookmarks>
@@ -140,7 +140,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="60" Y="32"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/fToonEditormodel.pas"/>
@@ -149,66 +149,66 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="603"/>
         <CursorPos X="37" Y="625"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpTrackElement.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="39" Y="13"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpTonenObject.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpVolumeChange.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="2"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpPedaal.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="2"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpTempowisseling.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="cmpTempoWisseling"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpPanoramaChange.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/TrackElementen/cmpProgramChange.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="8" Y="21"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/cmpShapes.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/cmpEventShapes.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpObjectInfo.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/frObjectnfo.pas"/>
@@ -217,12 +217,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="frObjectInfo"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/cmpStrings2D.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/fGeselecteerdeMoment.pas"/>
@@ -232,7 +232,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="3"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevicewindows.pas"/>
@@ -241,7 +241,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <CursorPos X="18" Y="5"/>
-        <UsageCount Value="61"/>
+        <UsageCount Value="67"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umidideviceslinux.pas"/>
@@ -250,7 +250,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="40" Y="58"/>
-        <UsageCount Value="60"/>
+        <UsageCount Value="66"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevicefactory.pas"/>
@@ -258,17 +258,15 @@
         <UnitName Value="uMidiDeviceFactory"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="27"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="65"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umidiindevice.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMidiInDevice"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="-1"/>
         <CursorPos Y="15"/>
-        <UsageCount Value="50"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="56"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevice.pas"/>
@@ -277,7 +275,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="41" Y="13"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="55"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umidioutdevice.pas"/>
@@ -285,24 +283,21 @@
         <UnitName Value="uMidiOutDevice"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="17" Y="8"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="55"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/windows/umidideviceswindows.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMidiDevicesWindows"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="37"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/windows/uwindowsmidiindevice.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uWindowsMidiInDevice"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="52"/>
-        <UsageCount Value="31"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="37"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/windows/uwindowsmidioutdevice.pas"/>
@@ -310,7 +305,18 @@
         <UnitName Value="uWindowsMidiOutDevice"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="7"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="37"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLinuxMidiInspeelThread"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="17"/>
+        <CursorPos Y="58"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevices.pas"/>
@@ -349,12 +355,11 @@
       <Unit>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
         <UnitName Value="uLinuxMidiIndevice"/>
-        <TopLine Value="174"/>
-        <CursorPos X="46" Y="190"/>
-        <UsageCount Value="24"/>
-        <Bookmarks Count="2">
-          <Item0 X="25" Y="188" ID="1"/>
-          <Item1 X="3" Y="74" ID="2"/>
+        <TopLine Value="206"/>
+        <CursorPos Y="250"/>
+        <UsageCount Value="26"/>
+        <Bookmarks Count="1">
+          <Item0 X="3" Y="74" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
       </Unit>
@@ -368,10 +373,11 @@
       <Unit>
         <Filename Value="Logica/linux/ulinuxmidioutdevice.pas"/>
         <UnitName Value="uLinuxMidiOutDevice"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="123"/>
-        <CursorPos X="22" Y="153"/>
-        <UsageCount Value="24"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="181"/>
+        <CursorPos X="17" Y="202"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpToonAfspeler.pas"/>
@@ -382,23 +388,19 @@
       <Unit>
         <Filename Value="Logica/linux/ualsadevice.pas"/>
         <UnitName Value="uAlsaDevice"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="26" Y="14"/>
-        <UsageCount Value="13"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <CursorPos X="22" Y="22"/>
+        <UsageCount Value="15"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/linux/umidideviceslinux.pas"/>
         <UnitName Value="uMidiDevicesLinux"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="109"/>
-        <CursorPos X="77" Y="130"/>
-        <UsageCount Value="19"/>
-        <Bookmarks Count="2">
-          <Item0 Y="69" ID="1"/>
-          <Item1 X="18" Y="120" ID="2"/>
-        </Bookmarks>
+        <EditorIndex Value="3"/>
+        <TopLine Value="37"/>
+        <CursorPos X="27" Y="64"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/frObjectinfo.pas"/>
@@ -427,10 +429,12 @@
       <Unit>
         <Filename Value="Logica/linux/seq_event.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="307"/>
-        <CursorPos X="3" Y="328"/>
-        <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <TopLine Value="178"/>
+        <CursorPos X="9" Y="199"/>
+        <UsageCount Value="12"/>
+        <Bookmarks Count="1">
+          <Item0 X="28" Y="227" ID="1"/>
+        </Bookmarks>
       </Unit>
       <Unit>
         <Filename Value="Logica/linux/seqmid.inc"/>
@@ -448,174 +452,124 @@
       </Unit>
       <Unit>
         <Filename Value="Presentatie/common/uCommonTypes.pas"/>
-        <EditorIndex Value="7"/>
-        <CursorPos X="18"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="84" Y="7"/>
+        <UsageCount Value="13"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/unix/aliasctp.inc"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="3" Y="23"/>
-        <UsageCount Value="10"/>
+        <CursorPos X="3" Y="35"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/unix/ctypes.inc"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="3" Y="28"/>
+        <CursorPos X="3" Y="37"/>
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/linux/seq.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="554"/>
-        <CursorPos X="97" Y="575"/>
-        <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit>
-      <Unit>
-        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uLinuxMidiInspeelThread"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="18"/>
-        <CursorPos X="18" Y="55"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
+        <TopLine Value="307"/>
+        <CursorPos X="11" Y="329"/>
+        <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/lib/lazarus/3.0/components/lazutils/laztracer.pas"/>
         <UnitName Value="LazTracer"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
         <CursorPos X="11" Y="49"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/seq_i.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="164"/>
+        <CursorPos X="45" Y="185"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Logica/linux/seqmid_i.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="156"/>
+        <CursorPos X="29" Y="177"/>
+        <UsageCount Value="11"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="17">
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="182" Column="16" TopLine="169"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="191" TopLine="181"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="160" Column="39" TopLine="139"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="26" Column="19"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="73" Column="43" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="175" Column="82" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="177" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="178" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="176" Column="96" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="184" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="175" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="192" Column="40" TopLine="173"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="193" Column="49" TopLine="173"/>
+      </Position>
       <Position>
         <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="133" TopLine="104"/>
+        <Caret Line="140" Column="92" TopLine="101"/>
       </Position>
       <Position>
         <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="134" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="136" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="135" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="134" TopLine="105"/>
+        <Caret Line="127" Column="13" TopLine="111"/>
       </Position>
       <Position>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="97" TopLine="68"/>
+        <Caret Line="188" Column="28" TopLine="160"/>
       </Position>
       <Position>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="69" Column="7" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="93" Column="48" TopLine="64"/>
-      </Position>
-      <Position>
-        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="127" Column="52" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="201" TopLine="176"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="71" Column="17" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="25" Column="17" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="185" Column="14" TopLine="156"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="61" Column="13" TopLine="43"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="187" Column="20" TopLine="161"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="23" Column="18"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="87" Column="18" TopLine="142"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="187" Column="49" TopLine="168"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="24" Column="45"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="23" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
-        <Caret Line="31" Column="52" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="11" TopLine="3"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
-        <Caret Line="8" Column="13"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
-        <Caret Line="44" Column="31" TopLine="10"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="189" Column="26" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="21" Column="22"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="27" TopLine="5"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
-        <Caret Line="190" Column="46" TopLine="174"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
-        <Caret Line="44" Column="27" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
-        <Caret Line="43" Column="10" TopLine="18"/>
+        <Caret Line="250" TopLine="206"/>
       </Position>
     </JumpHistory>
     <RunParams>

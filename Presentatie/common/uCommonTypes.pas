@@ -4,7 +4,7 @@ interface
 
 type
   TAfspeelToon = record
-    Kanaal, Hoogte, Velocity, Lengte: Integer; Aan: Boolean;
+    Kanaal, Hoogte, Velocity, Lengte: Integer; Aan: Boolean; Sec, NanoSec: LongWord;
   end;
   TGetToonEvent = function(var aAfspeelToon: TAfspeelToon): Boolean of Object;
   TAskStopToonEvent = function: Boolean of Object;

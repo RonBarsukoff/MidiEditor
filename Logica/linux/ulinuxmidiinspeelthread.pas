@@ -37,10 +37,12 @@ begin
       if myType in [SND_SEQ_EVENT_NOTE, SND_SEQ_EVENT_NOTEON, SND_SEQ_EVENT_NOTEOFF, SND_SEQ_EVENT_KEYPRESS] then
       begin
         FAfspeelToon.Aan := ev^.data.note.velocity <> 0;
-        FAfspeelToon.Hoogte:= ev^.data.note.note;
-        FAfspeelToon.Velocity:= ev^.data.note.velocity;
-        FAfspeelToon.Kanaal:= ev^.data.note.channel;
-        FAfspeelToon.Lengte:= 1;
+        FAfspeelToon.Hoogte := ev^.data.note.note;
+        FAfspeelToon.Velocity := ev^.data.note.velocity;
+        FAfspeelToon.Kanaal := ev^.data.note.channel;
+        FAfspeelToon.Lengte := 1;
+        FAfspeelToon.Sec := ev^.time.time.tv_sec;
+        FAfspeelToon.NanoSec := ev^.time.time.tv_nsec;
         Synchronize(handleToonEvent);
       end;
       r:= snd_seq_event_input(SeqHandle, @ev );

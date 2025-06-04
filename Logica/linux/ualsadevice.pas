@@ -19,6 +19,7 @@ type
     PortType: dword;
     ClientName,
     PortName: string;
+    QueueId: Integer;
     IsOpen: Boolean;
     constructor Create(aAppName: String);
     destructor Destroy; override;

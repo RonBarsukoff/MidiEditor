@@ -29,6 +29,7 @@ type
     procedure cbTestMidiOutChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
   private
     FModel: TfrmMidiDialogModel;
@@ -98,6 +99,11 @@ begin
   FModel.Free;
 end;
 
+procedure TfrmMidiDialog.FormShow(Sender: TObject);
+begin
+  lIngespeeldeToon.Caption := '';
+end;
+
 procedure TfrmMidiDialog.Timer1Timer(Sender: TObject);
 begin
   FModel.VolgendeToon;
@@ -130,11 +136,14 @@ begin
 end;
 
 procedure TfrmMidiDialog.HandleToonEvent(aToon: TAfspeelToon);
+var
+  myTijd: TTime;
 begin
+  myTijd := aToon.Sec + aToon.NanoSec / 1000000000;
   if aToon.Aan then
-    lIngespeeldeToon.Caption := IntToStr(aToon.Hoogte)
+    lIngespeeldeToon.Caption := Format('Aan %d %f ', [aToon.Hoogte, myTijd])
   else
-    lIngespeeldeToon.Caption := 'Uit: '+IntToStr(aToon.Hoogte);
+    lIngespeeldeToon.Caption := Format('Uit %d %f ', [aToon.Hoogte, myTijd])
 end;
 
 procedure TfrmMidiDialog.HandleMidiInStatusUpdate(aOk: Boolean; const aMelding: String);

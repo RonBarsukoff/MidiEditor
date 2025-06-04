@@ -142,6 +142,8 @@ var
   myStatus: Integer;
   myPortInfo: Psnd_seq_port_info_t;
   myPort: cint;
+  myQueueId: Integer;
+  myTempo: Psnd_seq_queue_tempo_t;
 begin
   FAlsaDevice.IsOpen := False;
   myStatus := snd_seq_open(@FAlsaDevice.SeqHandle, 'default', SND_SEQ_OPEN_DUPLEX, SND_SEQ_NONBLOCK);
@@ -164,11 +166,25 @@ begin
     exit
   end;
   try
+    FAlsaDevice.QueueId := snd_seq_alloc_named_queue(FAlsaDevice.SeqHandle, 'Mijn Midi queue');
+    myStatus := snd_seq_queue_tempo_malloc(@myTempo);
+    snd_seq_queue_tempo_set_tempo(myTempo, 600000);
+    snd_seq_queue_tempo_set_ppq(myTempo, 240);
+    myStatus := snd_seq_set_queue_tempo(FAlsaDevice.SeqHandle, FAlsaDevice.QueueId, myTempo);
+    myStatus := snd_seq_drain_output(FAlsaDevice.SeqHandle);
+
+    snd_seq_port_info_set_client(myPortInfo, 0 ); // overgenomen uit RtMidi.cpp
     snd_seq_port_info_set_port(myPortInfo, 0); (* Defaults to 0, this for safety *)
     snd_seq_port_info_set_port_specified(myPortInfo, 1);
     snd_seq_port_info_set_name(myPortInfo, PChar(FAlsaDevice.AppName));
-    snd_seq_port_info_set_capability(myPortInfo, SND_SEQ_PORT_CAP_WRITE or SND_SEQ_PORT_CAP_SUBS_WRITE );
+    snd_seq_port_info_set_capability(myPortInfo, SND_SEQ_PORT_CAP_WRITE or SND_SEQ_PORT_CAP_SUBS_WRITE);
     snd_seq_port_info_set_type(myPortInfo, SND_SEQ_PORT_TYPE_MIDI_GENERIC or SND_SEQ_PORT_TYPE_APPLICATION);
+    snd_seq_port_info_set_midi_channels(myPortInfo, 16);
+
+    snd_seq_port_info_set_timestamp_real(myPortInfo, 1);
+    snd_seq_port_info_set_timestamping(myPortInfo, 1);
+    snd_seq_port_info_set_timestamp_queue(myPortInfo, FAlsaDevice.QueueId);
+
     myPort := snd_seq_create_port(FAlsaDevice.SeqHandle, myPortInfo);
     if myPort < 0 then
     begin
@@ -176,24 +192,40 @@ begin
       exit
     end;
     FAlsaDevice.Destination.port := myPort;
-    snd_seq_port_info_set_midi_channels(myPortInfo, 16);
+    myQueueId := snd_seq_port_info_get_timestamp_queue(myPortInfo);
+    snd_seq_port_info_set_timestamp_queue(myPortInfo, myQueueId);
+
   finally
     snd_seq_port_info_free(myPortInfo);
   end;
 
   Subscribe;
-  FInspeelThread := TLinuxMidiInspeelThread.Create(True);
-  FInspeelThread.SeqHandle := FAlsaDevice.SeqHandle;
-  FInspeelThread.OnToonEvent := handleToonEvent;
-  FInspeelThread.Start;
-  FAlsaDevice.IsOpen := True;
+  myStatus := snd_seq_start_queue(FAlsaDevice.SeqHandle, FAlsaDevice.QueueId, nil);
+  myStatus := snd_seq_drain_output(FAlsaDevice.SeqHandle);
+  if myStatus < 0 then
+    Warning('snd_seq_drain_output: ' + snd_strError(myStatus))
+  else
+  begin
+    FInspeelThread := TLinuxMidiInspeelThread.Create(True);
+    FInspeelThread.SeqHandle := FAlsaDevice.SeqHandle;
+    FInspeelThread.OnToonEvent := handleToonEvent;
+    FInspeelThread.Start;
+    FAlsaDevice.IsOpen := True;
+  end;
 end;
 
 procedure TLinuxMidiInDevice.Close;
+var
+  myStatus: Integer;
 begin
-  FInspeelThread.Terminate;
-  FreeAndNil(FInspeelThread);
-//  GetMidiInEvents;
+  myStatus := snd_seq_free_queue(FAlsaDevice.SeqHandle, FAlsaDevice.QueueId);
+  if myStatus < 0 then
+    Warning('snd_seq_drain_output: ' + snd_strError(myStatus));
+  if Assigned(FInspeelThread) then
+  begin
+    FInspeelThread.Terminate;
+    FreeAndNil(FInspeelThread);
+  end;
   UnSubscribe;
   FAlsaDevice.Close;
 end;
