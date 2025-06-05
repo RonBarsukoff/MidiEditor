@@ -95,6 +95,7 @@ end;
 
 procedure TfrmMidiDialog.FormDestroy(Sender: TObject);
 begin
+  FModel.TestMidiIn(False, getMidiInDevice);
   Timer1.Enabled := False;
   FModel.Free;
 end;
@@ -137,9 +138,12 @@ end;
 
 procedure TfrmMidiDialog.HandleToonEvent(aToon: TAfspeelToon);
 var
-  myTijd: TTime;
+  myTijd: Double;
 begin
-  myTijd := aToon.Sec + aToon.NanoSec / 1000000000;
+  if aToon.IsInMiliSeconden then
+    myTijd := aToon.MiliSeconden / 1000
+  else
+    myTijd := aToon.Sec + aToon.NanoSec / 1000000000;
   if aToon.Aan then
     lIngespeeldeToon.Caption := Format('Aan %d %f ', [aToon.Hoogte, myTijd])
   else

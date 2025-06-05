@@ -20,7 +20,7 @@ uses
 function CreateMidiDevices(aAppName: String): TMidiDevices;
 begin
   {$ifdef Windows}
-    Result := TMidiDevicesWindows.Create;
+    Result := TMidiDevicesWindows.Create(aAppName);
   {$else}
     Result := TMidiDevicesLinux.Create(aAppName);
   {$endif}

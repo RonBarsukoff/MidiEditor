@@ -29,14 +29,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="fMidiDialog"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="102"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="108"/>
         <CursorPos X="37" Y="118"/>
         <UsageCount Value="76"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/cmpAfspeelThread.pas"/>
@@ -50,7 +46,7 @@
         <Filename Value="Logica/cmptooninspeler.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="cmpToonInspeler"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="45"/>
         <CursorPos Y="83"/>
         <UsageCount Value="76"/>
@@ -117,10 +113,10 @@
       </Unit>
       <Unit>
         <Filename Value="Logica/uMMProcs.pas"/>
-        <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="31" Y="10"/>
+        <CursorPos X="14" Y="9"/>
         <UsageCount Value="76"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Presentatie/lazarus/frMidiEditor.pas"/>
@@ -311,12 +307,12 @@
         <Filename Value="Logica/linux/ulinuxmidiinspeelthread.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uLinuxMidiInspeelThread"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="17"/>
+        <TopLine Value="16"/>
         <CursorPos Y="58"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="Logica/umididevices.pas"/>
@@ -355,8 +351,8 @@
       <Unit>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
         <UnitName Value="uLinuxMidiIndevice"/>
-        <TopLine Value="206"/>
-        <CursorPos Y="250"/>
+        <TopLine Value="198"/>
+        <CursorPos X="28" Y="213"/>
         <UsageCount Value="26"/>
         <Bookmarks Count="1">
           <Item0 X="3" Y="74" ID="2"/>
@@ -373,7 +369,7 @@
       <Unit>
         <Filename Value="Logica/linux/ulinuxmidioutdevice.pas"/>
         <UnitName Value="uLinuxMidiOutDevice"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="181"/>
         <CursorPos X="17" Y="202"/>
         <UsageCount Value="26"/>
@@ -396,7 +392,7 @@
       <Unit>
         <Filename Value="Logica/linux/umidideviceslinux.pas"/>
         <UnitName Value="uMidiDevicesLinux"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="37"/>
         <CursorPos X="27" Y="64"/>
         <UsageCount Value="21"/>
@@ -499,7 +495,7 @@
         <UsageCount Value="11"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="17">
+    <JumpHistory HistoryIndex="16">
       <Position>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
         <Caret Line="182" Column="16" TopLine="169"/>
@@ -556,20 +552,16 @@
         <Caret Line="193" Column="49" TopLine="173"/>
       </Position>
       <Position>
-        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="140" Column="92" TopLine="101"/>
-      </Position>
-      <Position>
-        <Filename Value="Presentatie/lazarus/fmididialog.pas"/>
-        <Caret Line="127" Column="13" TopLine="111"/>
-      </Position>
-      <Position>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
         <Caret Line="188" Column="28" TopLine="160"/>
       </Position>
       <Position>
         <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
         <Caret Line="250" TopLine="206"/>
+      </Position>
+      <Position>
+        <Filename Value="Logica/linux/ulinuxmidiindevice.pas"/>
+        <Caret Line="213" Column="28" TopLine="198"/>
       </Position>
     </JumpHistory>
     <RunParams>

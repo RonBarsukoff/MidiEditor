@@ -16,8 +16,8 @@ type
 
 implementation
 uses
+  MMSystem,
   uTypes,
-  uMMProcs,
   uMidiConstants,
   uWindowsMidiInDevice,
   uWindowsMidiOutDevice;

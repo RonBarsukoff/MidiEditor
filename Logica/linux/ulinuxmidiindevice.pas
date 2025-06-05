@@ -220,7 +220,7 @@ var
 begin
   myStatus := snd_seq_free_queue(FAlsaDevice.SeqHandle, FAlsaDevice.QueueId);
   if myStatus < 0 then
-    Warning('snd_seq_drain_output: ' + snd_strError(myStatus));
+    Warning('snd_seq_free_queue: ' + snd_strError(myStatus));
   if Assigned(FInspeelThread) then
   begin
     FInspeelThread.Terminate;

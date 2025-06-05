@@ -104,6 +104,8 @@ begin
       myAfspeelToon.Kanaal:= 0;
       myAfspeelToon.Lengte:= 1;
       OnToonEvent(myAfspeelToon);
+      myAfspeelToon.IsInMiliSeconden := True;
+      myAfspeelToon.MiliSeconden := P2;
     end;
 //    PostMessage(MidiData^.mdHWindow, wm_MidiData, P1, P2);
     //if HMidiUit <> 0 then
